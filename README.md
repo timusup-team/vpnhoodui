@@ -13,7 +13,7 @@ You can run the ./setup.sh script to do the work for you, otherwise you can foll
 
 `` git clone https://github.com/timusup-team/vpnhoodui .``
 
-``./web/setup.sh``
+``./setup.sh``
 
 ## Method 2) Running docker yourself (for advanced users)
 ### run the docker:
