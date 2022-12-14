@@ -1,7 +1,16 @@
 # very basic VPN HOOD token manager interface
 
 ## Run with the script: 
+
  You can run the ./setup.sh script to do the work for you, otherwise you can follow the following examples to run the docker.
+ 
+`` mkdir /home/vpnhood``
+
+`` cd /home/vpnhood ``
+
+`` git clone https://github.com/timusup-team/vpnhoodui ./web``
+
+``./setup.sh``
 ## run the docker:
 
 `` docker run --network host --volume /home/vpnhood/storage:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui``
