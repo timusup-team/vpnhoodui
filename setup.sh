@@ -1,4 +1,4 @@
-whoami
+
 DOCKER_PATH=$(which docker)
 function create_env_file(){
     echo "BASE_URL=${PATH}
