@@ -44,7 +44,7 @@ fi
 
 create_env_file
 
-$DOCKER_PATH run --network host --volume $PWD:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui
+$DOCKER_PATH run --network host --volume $PWD/storage:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui
 
 $DOCKER_PATH cp ./. MyVpnHoodServer:/app/web
 
