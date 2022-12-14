@@ -2,18 +2,20 @@
 
 ## Run with the script: 
 
- You can run the ./setup.sh script to do the work for you, otherwise you can follow the following examples to run the docker.
+### Please make sure that you run the following code on the server and not on your own computer.
+ 
+You can run the ./setup.sh script to do the work for you, otherwise you can follow the following examples to run the docker.
  
 `` mkdir /home/vpnhood``
 
 `` cd /home/vpnhood ``
 
-`` git clone https://github.com/timusup-team/vpnhoodui ./web``
+`` git clone https://github.com/timusup-team/vpnhoodui .``
 
-``./setup.sh``
+``./web/setup.sh``
 ## run the docker:
 
-`` docker run --network host --volume /home/vpnhood/storage:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui``
+`` docker run --network host --volume $PWD/storage:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui``
 
 ## Run php builtin server:
 
