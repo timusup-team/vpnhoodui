@@ -1,6 +1,7 @@
 # very basic VPN HOOD token manager interface
 
-## Run with the script: 
+# How to run : 
+## Method 1) Run with the script: 
 
 ### Please make sure that you run the following code on the server and not on your own computer.
  
@@ -13,11 +14,13 @@ You can run the ./setup.sh script to do the work for you, otherwise you can foll
 `` git clone https://github.com/timusup-team/vpnhoodui .``
 
 ``./web/setup.sh``
-## run the docker:
+
+## Method 2) Running docker yourself (for advanced users)
+### run the docker:
 
 `` docker run --network host --volume $PWD/storage:/app/storage --name MyVpnHoodServer --env-file .env -d rkhalafiniya/vpnhoodui``
 
-## Run php builtin server:
+### Run php builtin server:
 
 #### DON'T forget to add your server ip to the .env file!!!!
 (!) The BASE_URL should start with / in the beginning.
