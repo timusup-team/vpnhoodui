@@ -5,7 +5,13 @@
 
 ### Please make sure that you run the following code on the server and not on your own computer.
  
-You can run the ./setup.sh script to do the work for you, otherwise you can follow the following examples to run the docker.
+You can use the ./setup.sh script to do the work for you, 
+otherwise you can follow the method 2 and run the docker manually. 
+To use the ./setup.sh rund the following command in the exact 
+order on the server. 
+
+At the end of the setup script you'll get a link to the token manager interface.
+Keep this URL for yourself and don't share your username and password.
  
 `` mkdir /home/vpnhood``
 
