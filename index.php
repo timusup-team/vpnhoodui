@@ -55,7 +55,7 @@ function getToken($output)
     $end = strpos($token, '---');
     $endOfString = substr($token, $end);
     $token = str_replace($endOfString, '', $token);
-    return $token;
+    return trim($token);
 }
 
 function listFilesSortedByDate($dir)
